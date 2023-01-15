@@ -5,6 +5,10 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
+.banner-section{
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 5px;
+}
 .header-container{
     display: flex;
     justify-content: space-around;
@@ -64,4 +68,35 @@ h3{
 .second-page{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+     padding: 100px 50px 100px 160px;
+}
+.team-head1{
+    font-size: 22px;
+    font-weight: 850;
+    padding-bottom: 5px;
+}
+span{
+    color: #727272;
+}
+.team-head2{
+    font-size: 22px;
+    font-weight: 850;
+    padding-bottom: 10px;
+    color:  rgb(255, 136, 0) ;
+}
+.team-para{
+    width: 450px;
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 20px;
 }
