@@ -5,7 +5,7 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
-/* banner page */
+/* menu page */
 .banner-section{
     background-color: rgba(255, 144, 14, 0.1);
     padding: 5px;
@@ -30,6 +30,7 @@ h3{
 .home-bar{
     list-style: none;
 }
+/* bannar bar */
 .brand{
     display: flex;
     justify-content: center;
@@ -66,6 +67,7 @@ h3{
     justify-content: center;
     padding: 20px;
 }
+/* second page start */
 .second-page{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -108,7 +110,7 @@ span{
     padding-left: 120px;
     padding-right: 120px;
     gap: 30px;
-    height: 800px;
+   
 }
 .vl-and-head{
     display: flex;
@@ -149,8 +151,14 @@ h4{
     background-color: orange;
     position: relative;
     height: 30%;
+    color: #ffffff;
+    font-size: 40px;
+    padding: 10px;
 }
-/* some-fact start */
+.experience{
+    font-size: 30px;
+}
+/* some-fact page start */
 .some-fact{
     display: flex;
     flex-direction: column;
@@ -158,7 +166,6 @@ h4{
     margin-right: 10%;   
     align-items: left;
     gap: 30px;
-    
 }
 .fact{
     display: flex;
@@ -173,7 +180,6 @@ h4{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
-
 }
 .award{
     margin: 20px;
@@ -184,7 +190,6 @@ h4{
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    
 }
 .awar-num{
     font-size: 30px;
@@ -195,7 +200,7 @@ h4{
     font-weight: 800px;
     color: #464343;
 }
-/* sponsor page */
+/* sponsor page  start*/
 .sponsor, .sponsor-details{
     display: flex;
     flex-direction: column;
@@ -286,4 +291,73 @@ h4{
     margin-top: 10px;
     border-radius: 7px;
     font-size: 15px;
+}
+/* media Query */
+@media only screen  and (max-width:576px) {
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .brand, .brand-ackno{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 20px;
+        width: 70%;
+    }
+    .but-explore{
+        margin-bottom: 20px;
+        width:100px;
+        height: 30px;
+    }
+    .banner-img{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       padding: 15%;
+    }
+    /* second-page-media */
+    .second-page, .team-img{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .team-details{
+        padding: 30px ;
+    }
+    /* third pages */
+    .third-page{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 30px;
+        height: 800px;
+    }
+    .third-p-img{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height: 20%;
+    }
+    .some-fact{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .awards-list{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    
+    }
+    .sponsor{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        padding: 10px;
+    }
+    .cont-details{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    
 }
